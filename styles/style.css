@@ -1,3 +1,17 @@
+:root {
+  --f-family-base: Arial, Helvetica, sans-serif;
+  --f-size-s: 1.3rem;
+  --f-size-base: 1.6rem;
+  --f-size-l: 1.9rem;
+  --f-size-xl: 2.2rem;
+  --f-size-xxl: 2.5rem;
+  --white: #ffffff;
+  --lightgray: #f8f9fa;
+  --gray: #f2f2f2;
+  --darkgray: #70757a;
+  --blue: #4584ef;
+  --black: #212121;
+}
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -9,61 +23,81 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-size: 16px;
+  font-family: var(--f-family-base);
+  font-size: var(--f-size-base);
 }
-:root {
-  --f-family-base: Arial, Helvetica, sans-serif;
-  --f-size-s: 1.3rem;
-  --f-size-base: 1.6rem;
-  --f-size-l: 1.9rem;
-  --white: #ffffff;
-  --lightgray: #f8f9fa;
-  --gray: #f2f2f2;
-  --darkgray: #70757a;
-  --blue: #4584ef;
-  --black: #212121;
+img {
+  width: 100%;
+  height: auto;
 }
 header {
-  font-family: var(--f-family-base);
   font-size: var(--f-size-s);
-  text-align: right;
-  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
 }
-header a {
+header nav {
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
   margin: 1rem;
 }
-header a:link {
+header nav a:link {
   text-decoration: none;
 }
-header .text {
+header nav a.text {
   color: var(--black);
 }
-header .text:hover {
+header nav a.text:hover {
   text-decoration: underline;
 }
-header .btn {
-  position: relative;
-  width: 2rem;
-  height: 2rem;
-  background-color: yellow;
-  display: inline-block;
+header nav a.btn-apps {
+  color: var(--darkgray);
 }
-header .btn-apps {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #4584ef;
+header nav a.btn-apps:hover {
+  color: var(--black);
 }
-header .btn-apps:hover {
-  background-color: var(--gray);
-}
-header .btn-sign {
+header nav a.btn-sign {
   background-color: var(--blue);
   color: var(--lightgray);
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+}
+header nav a .btn-sign:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+main {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .box-search {
+  width: 36rem;
+  border: 0.1rem solid var(--gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4rem;
+  padding: 1rem 2rem;
+}
+main .btns {
+  margin: 2rem;
+}
+main .btns button {
+  margin: 0.5rem;
+  padding: 1rem;
+  border: none;
+  background-color: var(--lightgray);
+  color: var(--black);
   border-radius: 0.5rem;
 }
-header .btn-sign:hover {
-  text-decoration: none;
+main .btns button:hover {
+  cursor: pointer;
+  border: 0.2rem solid var(--gray);
 }
