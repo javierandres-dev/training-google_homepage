@@ -2,7 +2,7 @@
 :open_file_folder: github_pages-google_homepage
 
 ## Description
-This project is based on the exercise proposed in [The Odin Project](https://www.theodinproject.com/courses/foundations/lessons/html-css).  
+This is a fake page that mimics the look of the google home page.  
 How does it look? Take a look at [Google Homepage](https://javierandresgp.github.io/github_pages-google_homepage/)
 
 ## Stack
