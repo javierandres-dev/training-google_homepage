@@ -1,5 +1,5 @@
 # Self―Training
-:open_file_folder: training-google_homepage
+:octocat: training-google_homepage
 
 ## Description
 This is a fake page that mimics the look of the google home page.  
